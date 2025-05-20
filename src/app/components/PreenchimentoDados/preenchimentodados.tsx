@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Input from "../Input/input";
-import Botao from "../Botao/botao";
 import { useRouter } from "next/navigation"; // Para redirecionamento
 import SelecionarUsuario from "../SelecionarUsuario/selecionarusuario";
 import { useMemo } from "react";
@@ -29,7 +28,6 @@ const Preencher: React.FC<PreencherProps> = ({
     corTexto = "green",
     inputs = [],
     botaoTitulo = "Enviar",
-    type = "text",
     tipo
 }) => {
     const router = useRouter(); // Hook para redirecionamento
@@ -58,7 +56,7 @@ const Preencher: React.FC<PreencherProps> = ({
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        let validationErrors: { [key: string]: string } = {};
+        const validationErrors: { [key: string]: string } = {};
 
         if (tipo === "cadastro" && !formData["cargo"]) {
             validationErrors["cargo"] = "Selecione um cargo";

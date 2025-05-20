@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import BotaoFiltro from "@/app/components/BotaoFiltro/botaoFiltro";
-import Link from "next/link";
+
 import ToggleSwitch from "@/app/components/ToggleSwitch/toggleswitch";
-import { it } from "node:test";
+
 import { useAuth } from "@/app/hook/useAuth";
 
 type LinhaEstacao = {
