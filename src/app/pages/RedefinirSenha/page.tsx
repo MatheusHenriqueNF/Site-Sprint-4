@@ -9,7 +9,6 @@ import { useAuth } from "@/app/hook/useAuth";
 
 const RedefinirSenha = () => {
 
-  <Suspense fallback={<div>Carregando...</div>}></Suspense>
 
   useAuth();
 
@@ -119,4 +118,11 @@ const RedefinirSenha = () => {
   );
 };
 
-export default RedefinirSenha;
+const RedefinirSenhaPage = () => (
+  <Suspense fallback={<div>Carregando...</div>}>
+    <RedefinirSenha />
+  </Suspense>
+);
+
+
+export default RedefinirSenhaPage;
