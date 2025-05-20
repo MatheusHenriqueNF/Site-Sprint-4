@@ -29,6 +29,12 @@ npm run dev
 A aplicação estará disponível em localhost:
 📎 [http://localhost:3000](http://localhost:3000)
 
+### Clone a API em JAVA
+```bash
+# Clone o repositório
+git clone https://github.com/MatheusHenriqueNF/Java-Sprint-4
+````
+
 ---
 ## 🔧 Como rodar a API Java (Quarkus) no IntelliJ IDEA
 
