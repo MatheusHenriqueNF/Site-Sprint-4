@@ -196,6 +196,12 @@ vercel
 
 ---
 
+
+# ACESSE TAMBÉM O TOTEM DESENVOLVIDO AQUI: 
+
+
+---
+
 ## 🪖 Integrantes
 
 * CLEYTON ENRIKE DE OLIVEIRA – RM 560485 - Turma 1TDSQ
