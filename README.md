@@ -17,7 +17,7 @@ Este repositório contém o código-fonte da interface web do projeto **ViaSmart
 git clone https://github.com/seu-usuario/seu-repo.git
 
 # Acesse a pasta do projeto
-cd [site-web](https://github.com/MatheusHenriqueNF/Site-Sprint-4)
+cd https://github.com/MatheusHenriqueNF/Site-Sprint-4
 
 # Instale as dependências
 npm install
