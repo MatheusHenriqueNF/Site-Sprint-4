@@ -14,7 +14,7 @@ Este repositório contém o código-fonte da interface web do projeto **ViaSmart
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/MatheusHenriqueNF/Site-Sprint-4
 
 # Acesse a pasta do projeto
 cd https://github.com/MatheusHenriqueNF/Site-Sprint-4
