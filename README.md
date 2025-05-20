@@ -51,10 +51,14 @@ Ao iniciar a aplicação, você será direcionado à tela de login.
 
 ## ✨ Funcionalidades do site
 
+### 🚨A navegação no site só é permitida quando o usuário estiver autenticado, caso contrário não será possível utilizar o site
+
 ### 📋 Dúvidas Frequentes
 
 * Lista de perguntas e respostas organizadas
-* Expansão da resposta ao clicar na pergunta
+* Atualização de pergunta e resposta
+* Atualização de status (ativo/pausada) da pergunta e resposta
+* Cadastro de pergunta e resposta no banco de dados
 
 ### 👨‍💼 Área do Colaborador
 
@@ -64,14 +68,19 @@ Ao iniciar a aplicação, você será direcionado à tela de login.
 * Alteração de status (ativo/inativo)
 * Visualização e gerenciamento das permissões
 
+### 🚉 Linhas e Estações
+* Alteração de status (ativo/inativo)
+* Visualização e gerenciamento das estações
+
 ---
 
 ## 🌐 Integração com a API
 
 Este site consome endpoints da API Java Quarkus (RESTful) para:
 
-* Buscar estações
+* Listar e gerenciar linhas e estações
 * Listar e gerenciar dúvidas frequentes
+* Listar e gerenciar usuários
 * Autenticar usuários e permissões
 
 > ⚠️ Certifique-se de que a **API está online** e com **CORS habilitado** para permitir chamadas do front-end.
@@ -107,9 +116,7 @@ vercel
 
 ---
 
-## 🪖
-
-Integrantes:
+## 🪖 Integrantes
 
 **CLEYTON ENRIKE DE OLIVEIRA – RM 560485 - Turma 1TDSQ**
 **MATHEUS HENRIQUE NASCIMENTO DE FREITAS – RM 560442 - Turma 1TDSQ**
