@@ -190,9 +190,9 @@ vercel
 
 ---
 
-## 📌 Observações
+## ⚠️ Observações importantes
 
-* Certifique-se de configurar corretamente a URL da API no código (substituir `localhost` por URL pública)
+* Caso a **API esteja rodando localmente**, o Vercel **não conseguirá acessá-la**.
 
 ---
 
