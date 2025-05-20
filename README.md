@@ -93,8 +93,8 @@ git clone https://github.com/MatheusHenriqueNF/Java-Sprint-4
 
 5. **Execute a API pelo TERMINAL:**
 
-   * TERMINAL > Digite: cd .\projeto-challenge-api\
-   * Depois digite: mvn quarkus:dev
+   * TERMINAL > Digite:  mvn quarkus:dev
+   * ⚠️ Verifique se está no diretório correto, caso execute o código fora do repositória da API não irá funcionar
 
 6. **A API estará disponível em:**
 
