@@ -29,6 +29,72 @@ npm run dev
 A aplicação estará disponível em localhost:
 📎 [http://localhost:3000](http://localhost:3000)
 
+Claro! Aqui está a seção que faltava no seu `README.md`, explicando como rodar a **API Java com Quarkus** no **IntelliJ IDEA**, incluindo a instalação do plugin Quarkus e execução do projeto:
+
+---
+
+## 🔧 Como rodar a API Java (Quarkus) no IntelliJ IDEA
+
+### ✅ Pré-requisitos
+
+* **Java 17** instalado ([OpenJDK 17](https://jdk.java.net/17/))
+* **Maven** instalado ou configurado pelo IntelliJ
+* **IntelliJ IDEA** (Community ou Ultimate)
+* Conexão ativa com o banco de dados Oracle
+* A API clonada localmente
+
+---
+
+### 💡 Instalar o plugin do Quarkus no IntelliJ
+
+1. Abra o IntelliJ IDEA
+2. Vá até `File > Settings > Plugins`
+3. Busque por **Quarkus** no Marketplace
+4. Clique em **Install**
+5. Reinicie o IntelliJ após a instalação
+
+---
+
+### 🚀 Executar a API no IntelliJ
+
+1. **Importe o projeto:**
+
+   * Vá em `File > Open` e selecione a pasta do projeto da API Java
+   * O IntelliJ reconhecerá o projeto Maven automaticamente
+
+2. **Verifique o arquivo `pom.xml`:**
+
+   * Certifique-se de que todas as dependências estão resolvidas (ícone verde no canto superior direito)
+
+3. **Configure as variáveis de ambiente (se necessário):**
+
+   * Como `QUARKUS_DATASOURCE_USERNAME`, `QUARKUS_DATASOURCE_PASSWORD` e `QUARKUS_DATASOURCE_JDBC_URL`
+   * Isso pode ser feito dentro da aba `Edit Configurations` > `Application` > `Environment variables`
+
+4. **Execute a API:**
+
+   * Vá até a classe principal (geralmente algo como `Application.java`)
+   * Clique com o botão direito > `Run 'Application.main()'`
+
+5. **A API estará disponível em:**
+
+   ```
+   http://localhost:8080
+   ```
+
+---
+
+### 📌 Endpoints úteis
+
+* **Login:** `POST http://localhost:8080/login`
+* **Listar estações:** `GET http://localhost:8080/estacoes-linhas`
+* **Dúvidas frequentes:** `GET http://localhost:8080/duvidas`
+
+> Garanta que o CORS está habilitado no projeto Quarkus (`application.properties`):
+
+```properties
+quarkus.http.cors=true
+```
 ---
 
 ## 🔐 Como logar
