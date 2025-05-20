@@ -1,4 +1,6 @@
 'use client';
+
+import { Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Logo from "@/app/components/Logo/logo";
 import React, { useState, useEffect } from "react";
@@ -7,7 +9,9 @@ import { useAuth } from "@/app/hook/useAuth";
 
 const RedefinirSenha = () => {
 
-    useAuth();
+  <Suspense fallback={<div>Carregando...</div>}></Suspense>
+
+  useAuth();
 
 
   const searchParams = useSearchParams();
