@@ -1,12 +1,12 @@
 'use client';
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Logo from "@/app/components/Logo/logo";
 import PreencherDuvida from "@/app/components/PreecherDuvida/PreencherDuvida";
 import { useAuth } from "@/app/hook/useAuth";
 
-const Pergunta = () => {
-
+const Conteudo = () => {
   useAuth();
 
   const searchParams = useSearchParams();
@@ -15,7 +15,6 @@ const Pergunta = () => {
   const pergunta = searchParams.get("pergunta");
   const resposta = searchParams.get("resposta");
 
-  // Se os três parâmetros estiverem presentes, preenche os campos para edição
   const duvidaSelecionada = id && pergunta && resposta
     ? {
         idDuvida: Number(id),
@@ -35,5 +34,11 @@ const Pergunta = () => {
     </div>
   );
 };
+
+const Pergunta = () => (
+  <Suspense fallback={<div>Carregando...</div>}>
+    <Conteudo />
+  </Suspense>
+);
 
 export default Pergunta;
