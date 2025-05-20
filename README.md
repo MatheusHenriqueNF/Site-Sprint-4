@@ -29,10 +29,7 @@ npm run dev
 A aplicação estará disponível em localhost:
 📎 [http://localhost:3000](http://localhost:3000)
 
-Claro! Aqui está a seção que faltava no seu `README.md`, explicando como rodar a **API Java com Quarkus** no **IntelliJ IDEA**, incluindo a instalação do plugin Quarkus e execução do projeto:
-
 ---
-
 ## 🔧 Como rodar a API Java (Quarkus) no IntelliJ IDEA
 
 ### ✅ Pré-requisitos
@@ -49,6 +46,8 @@ Claro! Aqui está a seção que faltava no seu `README.md`, explicando como roda
 
 1. Abra o IntelliJ IDEA
 2. Vá até `File > Settings > Plugins`
+![image](https://github.com/user-attachments/assets/705c1ef7-0dcf-4afe-8241-1f0292099a5b)
+
 3. Busque por **Quarkus** no Marketplace
 4. Clique em **Install**
 5. Reinicie o IntelliJ após a instalação
