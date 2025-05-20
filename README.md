@@ -178,7 +178,7 @@ Este site consome endpoints da API Java Quarkus (RESTful) para:
 
 ## 🖥️ Deploy no Vercel
 
-O projeto pode ser acessado facilmente via VERCEL, porém não será possível navegar, pois o projeto não consegue ter acesso com a API em JAVA que esta localhost [Vercel]([https://vercel.com/](https://vercel.com/matheus-freitas-projects-364d2ef3/site-sprint-4-xcep)):
+O projeto pode ser acessado facilmente via VERCEL, porém não será possível navegar, pois o projeto não consegue ter acesso com a API em JAVA que esta localhost https://vercel.com/matheus-freitas-projects-364d2ef3/site-sprint-4-xcep
 
 ```bash
 # Instale o CLI da Vercel (se desejar)
