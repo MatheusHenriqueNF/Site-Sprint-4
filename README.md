@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📍 ViaSmart - Interface Web
 
-## Getting Started
+Este repositório contém o código-fonte da interface web do projeto **ViaSmart**, desenvolvido com **Next.js** e voltado para um totem de consulta de rotas, dúvidas frequentes e gerenciamento de colaboradores.
 
-First, run the development server:
+---
+
+## 🚀 Como executar o projeto localmente
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado (versão 18 ou superior)
+- [Yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/)
+
+### Passos
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+
+# Acesse a pasta do projeto
+cd seu-repo
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+````
+
+A aplicação estará disponível em localhost:
+📎 [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🔐 Como logar
+
+Ao iniciar a aplicação, você será direcionado à tela de login.
+
+### Acesso como Engenheiro de Sistemas (Cargo com acesso total do sistema):
+
+* **Usuário:** `ES@5948`
+* **Senha:** `193420`
+
+### Acesso como Controlador de Trafego (Cargo com acesso ao sistema):
+
+* **Usuário:** `CT@4078`
+* **Senha:** `496305`
+
+> Esses dados são utilizados apenas para testes locais e devem ser ajustados conforme os usuários cadastrados no banco de dados da aplicação.
+
+---
+
+## ✨ Funcionalidades do site
+
+### 📋 Dúvidas Frequentes
+
+* Lista de perguntas e respostas organizadas
+* Expansão da resposta ao clicar na pergunta
+
+### 👨‍💼 Área do Colaborador
+
+* Login de usuário
+* Cadastro de novos colaboradores
+* Redefinição de senha (somente para cargos autorizados = "Engenheiro de Sistemas")
+* Alteração de status (ativo/inativo)
+* Visualização e gerenciamento das permissões
+
+---
+
+## 🌐 Integração com a API
+
+Este site consome endpoints da API Java Quarkus (RESTful) para:
+
+* Buscar estações
+* Listar e gerenciar dúvidas frequentes
+* Autenticar usuários e permissões
+
+> ⚠️ Certifique-se de que a **API está online** e com **CORS habilitado** para permitir chamadas do front-end.
+
+---
+
+## 🧠 Tecnologias utilizadas
+
+* [Next.js](https://nextjs.org/)
+* [React](https://reactjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## 🖥️ Deploy no Vercel
+
+O projeto pode ser acessado facilmente via VERCEL, porém não será possível navegar, pois o projeto não consegue ter acesso com a API em JAVA que esta localhost [Vercel]([https://vercel.com/](https://vercel.com/matheus-freitas-projects-364d2ef3/site-sprint-4-xcep)):
+
+```bash
+# Instale o CLI da Vercel (se desejar)
+npm install -g vercel
+
+# Realize o deploy
+vercel
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Observações
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Certifique-se de configurar corretamente a URL da API no código (substituir `localhost` por URL pública)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🪖
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Integrantes:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**CLEYTON ENRIKE DE OLIVEIRA – RM 560485 - Turma 1TDSQ**
+**MATHEUS HENRIQUE NASCIMENTO DE FREITAS – RM 560442 - Turma 1TDSQ**
+**MATHEUS PINHEIRO ERMACORA MARTIN – RM 557720 - Turma 1TDSZ**
