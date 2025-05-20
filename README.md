@@ -46,9 +46,14 @@ A aplicação estará disponível em localhost:
 
 1. Abra o IntelliJ IDEA
 2. Vá até `File > Settings > Plugins`
-![image](https://github.com/user-attachments/assets/705c1ef7-0dcf-4afe-8241-1f0292099a5b)
+
+ ![image](https://github.com/user-attachments/assets/705c1ef7-0dcf-4afe-8241-1f0292099a5b)
 
 3. Busque por **Quarkus** no Marketplace
+
+![image](https://github.com/user-attachments/assets/6ec2b20b-3477-42e2-af0d-ac8b68856ed3)
+
+
 4. Clique em **Install**
 5. Reinicie o IntelliJ após a instalação
 
@@ -61,6 +66,9 @@ A aplicação estará disponível em localhost:
    * Vá em `File > Open` e selecione a pasta do projeto da API Java
    * O IntelliJ reconhecerá o projeto Maven automaticamente
 
+  ![image](https://github.com/user-attachments/assets/cd72b62a-3bcf-4872-89d4-b97cc87ab498)
+
+
 2. **Verifique o arquivo `pom.xml`:**
 
    * Certifique-se de que todas as dependências estão resolvidas (ícone verde no canto superior direito)
@@ -70,12 +78,19 @@ A aplicação estará disponível em localhost:
    * Como `QUARKUS_DATASOURCE_USERNAME`, `QUARKUS_DATASOURCE_PASSWORD` e `QUARKUS_DATASOURCE_JDBC_URL`
    * Isso pode ser feito dentro da aba `Edit Configurations` > `Application` > `Environment variables`
 
-4. **Execute a API:**
+4. **Execute a API pelo RUN:**
 
-   * Vá até a classe principal (geralmente algo como `Application.java`)
-   * Clique com o botão direito > `Run 'Application.main()'`
+   * RUN > Selecione o run com Quarkus
 
-5. **A API estará disponível em:**
+![image](https://github.com/user-attachments/assets/f5e56bd9-ce26-4488-a7ff-43ecf77d3d8e)
+
+
+5. **Execute a API pelo TERMINAL:**
+
+   * TERMINAL > Digite: cd .\projeto-challenge-api\
+   * Depois digite: mvn quarkus:dev
+
+6. **A API estará disponível em:**
 
    ```
    http://localhost:8080
@@ -95,7 +110,7 @@ A aplicação estará disponível em localhost:
 quarkus.http.cors=true
 ```
 ---
-
+### NAVEGANDO PELO SITE
 ## 🔐 Como logar
 
 Ao iniciar a aplicação, você será direcionado à tela de login.
