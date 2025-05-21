@@ -4,7 +4,7 @@ Este repositório contém o código-fonte da interface web do projeto **ViaSmart
 
 ---
 
-## 🚀 Como executar o site localmente
+## 🚀 Como executar o site localmente 
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado (versão 18 ou superior)
